@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+.content-container {
+    display: block;
+    overflow-y: auto;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-container img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.horizontal-section {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+    margin-bottom: 50px; /* Adjusted margin to accommodate the dots */
+}
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari) */
+.horizontal-section::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.horizontal-section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.horizontal-item {
+    width: 100vw;
+    scroll-snap-align: start;
+    padding: 40px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.5em;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Change this to relative */
+    bottom: 30px; /* Adjust as needed */
+    width: 100%;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
