@@ -8,7 +8,9 @@ window.onload = function() {
         items.forEach((_, index) => {
             const dot = document.createElement('div');
             dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
+            if (index === 0) {
+              dot.classList.add('active');
+            }
             dotContainer.appendChild(dot);
         });
     }
