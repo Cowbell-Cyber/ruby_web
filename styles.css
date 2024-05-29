@@ -6,9 +6,9 @@ body {
 }
 
 .content-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .content-container img {
@@ -25,7 +25,7 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     position: relative;
-    margin-bottom: 50px; /* Adjusted margin to accommodate the dots */
+    margin-bottom: 50px; 
 }
 
 /* Hide scrollbar for webkit browsers (Chrome, Safari) */
@@ -33,23 +33,18 @@ body {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.horizontal-section {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
 .horizontal-item {
-    width: 100vw;
+    width: 78vw;
     scroll-snap-align: start;
-    padding: 40px;
+    padding: 10px;
     flex-shrink: 0;
     box-sizing: border-box;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     background: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
 }
 
 .dot-container {
