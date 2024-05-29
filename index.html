@@ -20,9 +20,26 @@
         <img src="images/image2.png" alt="Image 2" class="centered-image">
         <img src="images/image6.png" alt="Image 6" class="centered-image">
         <img src="images/image7.png" alt="Image 7" class="centered-image">
-        <img src="images/image8.png" alt="Image 8" class="centered-image">
+        <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="openImage(event, 'image8')">Cyber Risk API</button>
+            <button class="tablinks" onclick="openImage(event, 'image9')">Insights API</button>
+            <button class="tablinks" onclick="openImage(event, 'image10')">Heatmap</button>
+          </div>
+          
+          <div id="image8" class="tabcontent">
+            <img src="images/image8.png" alt="Image 8" class="centered-image">
+          </div>
+          
+          <div id="image9" class="tabcontent">
+            <img src="images/image9.png" alt="Image 9" class="centered-image">
+          </div>
+          
+          <div id="image10" class="tabcontent">
+            <img src="images/image10.png" alt="Image 10" class="centered-image">
+          </div>
+        <!-- <img src="images/image8.png" alt="Image 8" class="centered-image">
         <img src="images/image9.png" alt="Image 9" class="centered-image">
-        <img src="images/image10.png" alt="Image 10" class="centered-image">
+        <img src="images/image10.png" alt="Image 10" class="centered-image"> -->
     </div>
     <script src="script.js"></script>
 </body>
